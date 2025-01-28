@@ -24,8 +24,8 @@ Below are the key npm scripts available in the project:
 - `start-api-fetch-data`: Starts the API, waits for it to initialize, fetches data from the Google Sheet, and then stops the API.
 
 ### Automation
-`predev`: Runs start-api-fetch-data before starting the development server.
-`prebuild`: Runs start-api-fetch-data before building the application.
+- `predev`: Runs start-api-fetch-data before starting the development server.
+- `prebuild`: Runs start-api-fetch-data before building the application.
 
 
 ## Installation
