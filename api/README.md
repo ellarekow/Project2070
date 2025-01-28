@@ -20,12 +20,17 @@ Place the service-account.json file (Google Cloud service account credentials) i
 
 ## Usage
 
-Start the app:
+Start the app without hot-reloading:
 ```bash
 npm start
 ```
 
-Access the endpoint:
+Start the app _with_ hot reloading:
+```bash
+npm dev
+```
+
+Access the endpoint at `localhost:3000`, or whatever other port you configure in the ENV:
 
 - GET /: Retrieves and transforms Google Sheets data into JSON.
 
@@ -33,7 +38,7 @@ Access the endpoint:
 ```
 project2070/
 ├── config/
-│   └── index.js             # Application configuration
+│   └── index.js             # configuration
 ├── controllers/
 │   └── index.js             # Controller for handling requests
 ├── services/
@@ -41,7 +46,7 @@ project2070/
 │   └── transformSheet.js    # Data transformation logic
 ├── .env.example             # Environment variables example file
 ├── .gitignore               # Files to ignore in Git
-├── index.js                 # Application entry point
+├── index.js                 # Express entry point
 ├── package.json             # Node.js project metadata
 ├── service-account.json     # Google Cloud service account credentials, should always be git-ignored
 ```
