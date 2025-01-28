@@ -1,18 +1,8 @@
-<<<<<<< HEAD
-# Project2070
-A "compliment" to project 2025
-=======
 # Project2070 API
 
 An Express.js application for fetching and transforming Google Sheets data into a structured JSON format.
 
 ## Installation
-
-Clone the repository:
-```
-git clone <repository-url>
-cd project2070
-```
 
 Install dependencies:
 
@@ -23,10 +13,10 @@ npm install
 Copy .env.example to .env and fill in the values:
 ```
 SS_ID=spreadsheet id (a unique string of letters and numbers found in the URL after "d/" in the address bar)
-SHEET_NAME=name of sheet to use 
+SHEET_NAME=name of sheet to use (SOT) 
 ```
 
-Place the service-account.json file (Google Cloud service account credentials) in the root directory.
+Place the service-account.json file (Google Cloud service account credentials) in the root of the `api` directory.
 
 ## Usage
 
@@ -55,4 +45,3 @@ project2070/
 ├── package.json             # Node.js project metadata
 ├── service-account.json     # Google Cloud service account credentials, should always be git-ignored
 ```
->>>>>>> 853eb55 (readme update)
