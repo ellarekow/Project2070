@@ -10,15 +10,18 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "install-api": "npm i --prefix api", 
-    "start-api": "npm start --prefix api", 
-    "fetch-data": "node scripts/fetchAndSave.js", 
-    "stop-api": "kill $(lsof -t -i:3001)", 
+    "install-api": "npm i --prefix api",
+    "start-api": "npm start --prefix api",
+    "fetch-data": "node scripts/fetchAndSave.js",
+    "stop-api": "kill $(lsof -t -i:3001)",
     "start-api-fetch-data": "npm run start-api & sleep 3 && npm run fetch-data && npm run stop-api"
   },
   "dependencies": {
+    "bootstrap": "^5.3.3",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-bootstrap": "^2.10.8",
+    "react-dom": "^18.3.1",
+    "react-icons": "^5.4.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
