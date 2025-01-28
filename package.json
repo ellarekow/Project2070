@@ -10,11 +10,11 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
+    "install-api": "npm i --prefix api", 
     "start-api": "npm start --prefix api", 
     "fetch-data": "node scripts/fetchAndSave.js", 
     "stop-api": "kill $(lsof -t -i:3001)", 
     "start-api-fetch-data": "npm run start-api & sleep 3 && npm run fetch-data && npm run stop-api"
-  
   },
   "dependencies": {
     "react": "^18.3.1",
