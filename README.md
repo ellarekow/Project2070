@@ -16,7 +16,8 @@ Below are the key npm scripts available in the project:
 - `dev`: Starts the Vite development server.
 - `build`: Builds the React app for production.
 - `preview`: Serves the production build locally.
-- API and Data Fetching
+
+### API and Data Fetching
 - `start-api`: Starts the API server located in the api subdirectory.
 - `fetch-data`: Runs a script (scripts/fetchAndSave.js) to fetch data from the API (Google Sheet) and save it  locally.
 - `stop-api`: Stops the API server by killing the process running on port 3001.
