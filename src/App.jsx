@@ -3,7 +3,7 @@ import sheetData from "../data.json";
 import "./App.css";
 
 function App() {
-  const [data, setData] = useState(sheetData);
+  const [data, setData] = useState(sheetData); // setData could now be used to filter results
 
   const headings = data.reduce((acc, row) => {
     return Object.keys(row).reduce((acc, key) => {
