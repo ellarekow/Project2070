@@ -1,16 +1,16 @@
 
-const commaSeparatedValue = /tags/i
-const semicolonSeparated = /locations/i
+const commaSeparatedHeadings = /tags/i
+const semicolonSeparatedHeadings = /locations/i
 
 const ignoreEmpty = (value) => value !== '';
 
 const maybeSplitCell = (cell, head) => {
   // if the header maches the comma separation regex, split the cell by semicolon
-  if (commaSeparatedValue.test(head)) {
+  if (commaSeparatedHeadings.test(head)) {
     return cell.split(',').map(tag => tag.trim()).filter(ignoreEmpty);
   }
   // if the header maches the semicolon separation regex, split the cell by semicolon
-  if (semicolonSeparated.test(head)) {
+  if (semicolonSeparatedHeadings.test(head)) {
     return cell.split(';').map(location => location.trim()).filter(ignoreEmpty);
   }
   return cell;
