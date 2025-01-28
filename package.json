@@ -4,10 +4,17 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predev": "npm run start-api-fetch-data",
     "dev": "vite",
+    "prebuild": "npm run start-api-fetch-data",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start-api": "npm start --prefix api", 
+    "fetch-data": "node scripts/fetchAndSave.js", 
+    "stop-api": "kill $(lsof -t -i:3001)", 
+    "start-api-fetch-data": "npm run start-api & sleep 3 && npm run fetch-data && npm run stop-api"
+  
   },
   "dependencies": {
     "react": "^18.3.1",
